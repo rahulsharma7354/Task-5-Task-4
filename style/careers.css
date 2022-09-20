@@ -1,0 +1,83 @@
+.body-heading{
+    font-family: 'Lexend Deca', sans-serif;
+    margin-left: 3.7rem;
+    word-spacing: 5px;
+    font-size: 2.15rem;
+    color: rgb(35, 45, 49);
+}
+.body-para{
+    margin-left: 3.7rem;
+    margin-right: 23%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color:rgb(50, 60, 63);
+}
+.Name{
+    margin-top: 3rem;
+    margin-left: 6rem;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 28.5%;
+}
+.input-name{
+
+    float:right;
+}
+.input-email{
+   
+    float:right;
+}
+.input-role{
+ 
+    float:right;
+}
+.resume{
+    margin-top: 2.1rem;
+    margin-left: 6rem;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container-second{
+    display: inline-block;
+    width: 28.5%;
+
+}
+.input-resume{
+    float:right;
+}
+input{
+    height: 1.9rem;
+    border: 2px solid rgb(133, 138, 140);
+    box-sizing: border-box;
+    color: rgb(50, 60, 63);
+}
+.browse-button{
+    position: relative;
+    height: 2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    width: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.submit{
+    margin-top: 1.8rem;
+    width: 28.5%;
+}
+.submit-button{
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    height: 2rem;
+    font-weight: 600;
+    width: 30%;
+    font-size: 15px;
+    margin-right: 2.5rem;
+    padding-right: 14%;
+}
+
+
+

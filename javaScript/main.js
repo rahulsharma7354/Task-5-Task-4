@@ -1,0 +1,1 @@
+var k = document.getElementsByClassName('nav-bar');
