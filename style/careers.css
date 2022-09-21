@@ -22,6 +22,9 @@
 .container{
     width: 28.5%;
 }
+.input-field{
+    color: gray;
+}
 .input-name{
 
     float:right;

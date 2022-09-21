@@ -1,1 +1,5 @@
-var k = document.getElementsByClassName('nav-bar');
+document.getElementsByClassName('link').forEach(item => {
+    item.addEventListener('mouseover', event => {
+        
+    })
+  })

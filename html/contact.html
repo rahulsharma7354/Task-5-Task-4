@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Noto+Sans+JP&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <p> My Name: <input class="input-text" type="text" required></p>
+        <p> My Email Address: <input class="input-text" type="email" required></p>
+        <p> My Telephone Number: <input class="input-text" type="number"></p>
+        <p> My Organization Name: <input class="input-text" type="text" required></p>
+        <p> My city: <input class="input-text" type="text"></p>
+        <p class="state-input">
+            <b>My State or Provience:</b>
+            <select class="input-state">
+                <option class="input-field" value=" ">Select State or Provience</option>
+                <option value="visa">Madhya Pradesh</option>
+                <option value="MasterCard">Uttar pradesh</option>
+                <option value="Rupay">Maharastra</option>
+                <option value="Net Banking">Tamil Nadu</option>
+            </select>
+        </p>
+        <div class="contact">
+            <div class="contact-first-part">
+                <p class="contactmepara">Please Contact me by:</p>
+            </div>
+            <div class="radiobuttons">
+                <p><input type="radio" name="contactme"> Email</p>
+                <p><input type="radio" name="contactme"> Phone</p>
+                <p><input type="radio" name="contactme"> Both</p>
+            </div>
+        </div>
+
+        <p class="promotion-class"> Promotional Code: <input class="input-text" type="number"></p>
+
+        <h4 class="information-heading">Optional Information</h4>
+        <p class="information-para">This information is optional but it helps us to serve you better.</p>
+        <p>My Website Address is: <input class="input-text" type="email"></p>
+        <h4 class="tellabout-heading">Tell Us More About Your Organization:</h4>
+            <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
+            <h4 class="liketodo-heading">What i did really like to know is:</h4>
+            <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
+            <div class="button-container"></div>
+            <button class="first-button">Send Message</button>
+            <button class="second-button">Clear Form</button>
+    </div>
+     <script src="/javaScript/main.js"></script>
+</body>
+
+</html>
