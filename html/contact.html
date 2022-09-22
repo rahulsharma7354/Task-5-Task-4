@@ -6,20 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style/Index.css">
     <link rel="stylesheet" href="/style/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Noto+Sans+JP&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300&display=swap" rel="stylesheet">
 </head>
+<header>
+    <div class="header-section">
+        <h1 class="header-content">TECHNOVERT</h1>
+    </div>
+    <ul class="bar">
+        <li class="bar-element"><a href="/html/Index.html"> HOME</a></li>
+        <li class="bar-element"><a href="#news">SERVICES</a></li>
+        <li class="bar-element"><a href="/html/careers.html">CAREERS</a></li>
+        <li class="bar-element"><a href="#contact">CONTACTS</a></li>
+        <li class="bar-element"></li>
+        <li class="icon">
+            <img class="icon" src="/images/blog-icon.png" alt="Blog Icon" />
+        </li>
+    </ul>
+</header>
 
 <body>
-    <div class="form-container">
-        <p> My Name: <input class="input-text" type="text" required></p>
-        <p> My Email Address: <input class="input-text" type="email" required></p>
-        <p> My Telephone Number: <input class="input-text" type="number"></p>
-        <p> My Organization Name: <input class="input-text" type="text" required></p>
+    <form class="form-container " name = "myForm" onsubmit="return validateForm()" method ="post"id="myform">
+        <p> My Name: <input class="input-text name" type="text" name="fname"></p>
+        <p> My Email Address: <input class="input-text" type="email" name="femail"></p>
+        <p> My Telephone Number: <input class="input-text" type="number" name="fnum"></p>
+        <p> My Organization Name: <input class="input-text" type="text" name=""></p>
         <p> My city: <input class="input-text" type="text"></p>
         <p class="state-input">
             <b>My State or Provience:</b>
@@ -41,21 +63,31 @@
                 <p><input type="radio" name="contactme"> Both</p>
             </div>
         </div>
+        <div class="contact">
+            <div class="contact-first-part">
+                <p class="gender">Gender:</p>
+            </div>
+            <div class="gender-option">
+                <p><input class="male" type="radio" name="male"> Male</p>
+                <p><input class="female" type="radio" name="male"> Female</p>
+            </div>
+        </div>
 
-        <p class="promotion-class"> Promotional Code: <input class="input-text" type="number"></p>
+        <p class="promotion-class"> Promotional Code: <input  class="promotion" type="number"></p>
 
         <h4 class="information-heading">Optional Information</h4>
         <p class="information-para">This information is optional but it helps us to serve you better.</p>
         <p>My Website Address is: <input class="input-text" type="email"></p>
         <h4 class="tellabout-heading">Tell Us More About Your Organization:</h4>
-            <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
-            <h4 class="liketodo-heading">What i did really like to know is:</h4>
-            <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
-            <div class="button-container"></div>
-            <button class="first-button">Send Message</button>
-            <button class="second-button">Clear Form</button>
-    </div>
-     <script src="/javaScript/main.js"></script>
+        <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
+        <h4 class="liketodo-heading">What i did really like to know is:</h4>
+        <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
+        <div class="button-container"></div>
+        <input class="first-button" type="submit">Send Message</button>
+        <button class="second-button">Clear Form</button>
+    </form>
+    <script src="/javaScript/contact.js"></script>
+    <script src="/javaScript/index.js"></script>
 </body>
 
 </html>
