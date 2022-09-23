@@ -37,20 +37,26 @@
 </header>
 
 <body>
-    <form class="form-container " name = "myForm" onsubmit="return validateForm()" method ="post"id="myform">
-        <p> My Name: <input class="input-text name" type="text" name="fname"></p>
-        <p> My Email Address: <input class="input-text" type="email" name="femail"></p>
-        <p> My Telephone Number: <input class="input-text" type="number" name="fnum"></p>
-        <p> My Organization Name: <input class="input-text" type="text" name=""></p>
-        <p> My city: <input class="input-text" type="text"></p>
+    <form class="form-container " name = "myForm" id="myform" onsubmit="return validateForm()" method ="post">
+        <b><div class="error-show"></div></b>
+        <p> My Name <input class="input-text-name" id="name" type="text" name="fname"><span class="formerror"> </span></p>
+        <p> My Email Address: <input class="input-text-email" id="email" type="email" name="femail"><span class="formerror"> </span></p>
+        <p> My Telephone Number: <input class="input-text-phone" id="phone" type="number" name="fnum"><span class="formerror"> </span></p>
+        <p> My Organization Name: <input class="input-text-phone" id="orgName" type="text" name=""><span class="formerror"> </span></p>
+        <p> My city: <input class="input-text-city" id="city" type="text"><span class="formerror"></span></p>
         <p class="state-input">
             <b>My State or Provience:</b>
-            <select class="input-state">
-                <option class="input-field" value=" ">Select State or Provience</option>
-                <option value="visa">Madhya Pradesh</option>
-                <option value="MasterCard">Uttar pradesh</option>
-                <option value="Rupay">Maharastra</option>
-                <option value="Net Banking">Tamil Nadu</option>
+            <select 
+            name="Select State or Province"
+            class="input-state stateDropdown"
+            id="stateDropdown"
+            onchange="setPromotion(this.value)"
+            >
+                <option  class="input-field" value="">Select state or provience</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Uttar pradesh">Uttar pradesh</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
             </select>
         </p>
         <div class="contact">
@@ -73,19 +79,20 @@
             </div>
         </div>
 
-        <p class="promotion-class"> Promotional Code: <input  class="promotion" type="number"></p>
+        <p class="promotion-class"> Promotional Code: <input class="promotion" id = "promotion"type="text"></p>
 
         <h4 class="information-heading">Optional Information</h4>
         <p class="information-para">This information is optional but it helps us to serve you better.</p>
-        <p>My Website Address is: <input class="input-text" type="email"></p>
+        <p>My Website Address is: <input class="input-text-website" type="email"></p>
         <h4 class="tellabout-heading">Tell Us More About Your Organization:</h4>
         <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
         <h4 class="liketodo-heading">What i did really like to know is:</h4>
         <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
         <div class="button-container"></div>
-        <input class="first-button" type="submit">Send Message</button>
+        <button class="first-button">Submit Form</button>
         <button class="second-button">Clear Form</button>
     </form>
+
     <script src="/javaScript/contact.js"></script>
     <script src="/javaScript/index.js"></script>
 </body>

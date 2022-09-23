@@ -2,11 +2,17 @@
     margin-top: 0px;
     padding-top: 0px;
 }
+.error-show{
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: red;
+}
 .form-container{
     font-family: 'Cabin Condensed', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     margin-left: 35%;
-    width: 26rem;
+    width: 29rem;
     border: 1px solid gray;
     padding-left: 1%;
     letter-spacing: 1px;
@@ -15,25 +21,54 @@
     padding-bottom: 8px;
     margin-top: 0px;
 }
-.input-text{
-    float: right;
-    margin-right: 23%;
+.formerror{
+    color: red;
+}
+.input-text-name{
+ 
+    margin-left:18%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 1px solid rgb(200, 197, 197) ;
+    border-right: 1px solid rgb(200, 197, 197) ;
+}
+.input-text-email{
+    margin-left:7%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 1px solid rgb(200, 197, 197) ;
+    border-right: 1px solid rgb(200, 197, 197) ;
+}
+.input-text-phone{
+    margin-left:1.5%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 1px solid rgb(200, 197, 197) ;
+    border-right: 1px solid rgb(200, 197, 197) ;
+}
+.input-text-city{
+    margin-left: 21%;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 1px solid rgb(200, 197, 197) ;
     border-right: 1px solid rgb(200, 197, 197) ;
 }
 .promotion{
-    float: right;
-    margin-right: 23%;
+    margin-left: 9%;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 1px solid rgb(200, 197, 197) ;
     border-right: 1px solid rgb(200, 197, 197) ;
 }
 .input-state{
-    float: right;
-    margin-right: 21.5%;
+    margin-left: 3%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 1px solid rgb(200, 197, 197) ;
+    border-right: 1px solid rgb(200, 197, 197) ;
+}
+.input-text-website{
+    margin-left: 3%;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-bottom: 1px solid rgb(200, 197, 197) ;
@@ -60,7 +95,7 @@
     padding-top: 35%;
 }
 .gender-option{
-    margin-left: 27%;
+    margin-left: 25%;
 }
 .button-container{
     display: flex;

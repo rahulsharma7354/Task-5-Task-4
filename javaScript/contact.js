@@ -1,38 +1,52 @@
-var elem =  document.getElementsByClassName('second-button');
-for( var  i = 0 ; i< elem.length ; i++){
-  elem[i].addEventListener('click' , function() {
+var button =  document.getElementsByClassName('second-button');
+for( var  i = 0 ; i< button.length ; i++){
+  button[i].addEventListener('click' , function() {
           document.getElementById("myform").reset();
+          document.getElementsByClassName("formerror")[i].innerHTML=" ";
   })
 }
-var ele =  document.getElementsByClassName('male');
-for( var  i = 0 ; i< ele.length ; i++){
-  ele[i].addEventListener('click' , function() {
+var gender =  document.getElementsByClassName('male');
+for( var  i = 0 ; i< gender.length ; i++){
+  gender[i].addEventListener('click' , function() {
           alert("Hello sir");
   })
 }
-var ele =  document.getElementsByClassName('female');
-for( var  i = 0 ; i< ele.length ; i++){
-  ele[i].addEventListener('click' , function() {
+var gender =  document.getElementsByClassName('female');
+for( var  i = 0 ; i< gender.length ; i++){
+  gender[i].addEventListener('click' , function() {
           alert("Hello Lady");
   })
 }
-function clearErrors(){
-  errors = document.getElementsByClassName('formerror');
-  for(let item of errors){
-    item.innerHTML = "";
-  }
-}
-function seterror(id , error){
-  element = document.getElementById(id);
-  element.getElementsByClassName('formerror')[0].innerHTML=error;
-}
 
 function validateForm(){
-  var returnval = true;
-  clearErrors();
-  var name =document.forms['myForm']["fname"].value;
-  if(name.length==0){
-    seterror("name" , "*Required Feild")
+  var res = true;
+  var k = document.getElementById("name").value;
+  if(k.length==0){
+    document.getElementsByClassName("formerror")[0].innerHTML=" *Name is required";
+    res=false;
+  }
+  var k = document.getElementById("email").value;
+  if(k.length==0){
+    document.getElementsByClassName("formerror")[1].innerHTML=" *Email is required";
+    res=false;
+  }
+  var k = document.getElementById("orgName").value;
+  if(k.length==0){
+    document.getElementsByClassName("formerror")[3].innerHTML=" *Organization required";
+    res=false;
+  }
+  if (res==false){
+    document.getElementsByClassName("error-show")[0].innerHTML="Please fill all the required fields below";
+  }
+
+  return res;
+  
+  }
+function setPromotion(value) {
+  if (value != 'select') {
+      document.getElementById("promotion").value = value + " - PROMO";
+  }
+  else {
+      document.getElementById("promotion").value = "";
   }
 }
-

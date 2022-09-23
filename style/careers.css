@@ -20,7 +20,8 @@
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    width: 28.5%;
+    width: 27rem;
+    margin-bottom: 3.2rem;
 }
 .input-field{
     color: gray;
@@ -45,12 +46,16 @@
 
 }
 .container-second{
-    display: inline-block;
+    display: inline;
     width: 28.5%;
 
+
+}
+.resume{
+    display: inline;
 }
 .input-resume{
-    float:right;
+    margin-left:8vh ;
 }
 input{
     height: 1.9rem;
@@ -81,6 +86,5 @@ input{
     margin-right: 2.5rem;
     padding-right: 14%;
 }
-
 
 
