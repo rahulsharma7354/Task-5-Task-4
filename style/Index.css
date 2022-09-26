@@ -53,6 +53,8 @@ body{
   }
   a:hover {
     color: rgb(35, 45, 49);
+    background-color: rgb(239, 149, 14);
+    border-left: 5px solid white;
   }
 .border{
     font-size: 16px;
@@ -97,4 +99,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: rgb(50, 60, 63);
 }
-
+.form-submit{
+  text-align: center;
+  margin-top: 50%;
+}

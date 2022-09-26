@@ -37,12 +37,12 @@
 </header>
 
 <body>
-    <form class="form-container " name = "myForm" id="myform" onsubmit="return validateForm()" method ="post">
-        <b><div class="error-show"></div></b>
-        <p> My Name <input class="input-text-name" id="name" type="text" name="fname"><span class="formerror"> </span></p>
-        <p> My Email Address: <input class="input-text-email" id="email" type="email" name="femail"><span class="formerror"> </span></p>
+    <form  class="form-container " name = "myForm" id="myform" onsubmit="return validateForm()">
+        <b><div class="error-show">Please fill all the required fields below</div></b>
+        <p> My Name <input class="input-text-name" id="name" type="text" name="fname"><span class="star">*</span><span class="formerror">Name is required</span></p>
+        <p> My Email Address: <input class="input-text-email" id="email" type="email" name="femail"><span class="star">*</span><span class="formerror">Email is required </span></p>
         <p> My Telephone Number: <input class="input-text-phone" id="phone" type="number" name="fnum"><span class="formerror"> </span></p>
-        <p> My Organization Name: <input class="input-text-phone" id="orgName" type="text" name=""><span class="formerror"> </span></p>
+        <p> My Organization Name: <input class="input-text-phone" id="orgName" type="text" name=""><span class="star">*</span><span class="formerror">Organization required</span></p>
         <p> My city: <input class="input-text-city" id="city" type="text"><span class="formerror"></span></p>
         <p class="state-input">
             <b>My State or Provience:</b>
@@ -74,8 +74,8 @@
                 <p class="gender">Gender:</p>
             </div>
             <div class="gender-option">
-                <p><input class="male" type="radio" name="male"> Male</p>
-                <p><input class="female" type="radio" name="male"> Female</p>
+                <p><input class="male" type="radio" name="male" value="Hello Sir"> Male</p>
+                <p><input class="male" type="radio" name="male" value="Hello Lady"> Female</p>
             </div>
         </div>
 
@@ -89,7 +89,7 @@
         <h4 class="liketodo-heading">What i did really like to know is:</h4>
         <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
         <div class="button-container"></div>
-        <button class="first-button">Submit Form</button>
+        <button  class="first-button">Submit Form</button>
         <button class="second-button">Clear Form</button>
     </form>
 

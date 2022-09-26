@@ -6,55 +6,51 @@ for( var  i = 0 ; i< button.length ; i++){
   })
 }
 
-var gender =  document.getElementsByClassName('male');
-for( var  i = 0 ; i< gender.length ; i++){
-  gender[i].addEventListener('click' , function() {
-          alert("Hello sir");
+var gender = document.getElementsByClassName("male");
+for(var i=0 ; i< gender . length ; i++){
+  gender[i].addEventListener('click' , function () {
+    var k = document.querySelector('input[name="male"]:checked').value;
+    alert(k)
   })
 }
-var gender =  document.getElementsByClassName('female');
-for( var  i = 0 ; i< gender.length ; i++){
-  gender[i].addEventListener('click' , function() {
-          alert("Hello Lady");
-  })
-}
+
+
 
 function validateForm(){
   var res = true;
   var name = document.getElementById("name").value;
   if(name.length==0){
-    document.getElementsByClassName("formerror")[0].innerHTML=" *Name is required";
+    document.getElementsByClassName("input-text-name")[0].style.borderColor = "red";
+    document.getElementsByClassName("star")[0].style.visibility="hidden"
+    document.getElementsByClassName("formerror")[0].style.visibility = "visible";
     res=false;
   }
-  if(name.length>0){
-    document.getElementsByClassName("formerror")[0].innerHTML=" *";
-    res=true;
-  }
-
   var email = document.getElementById("email").value;
   if(email.length==0){
-    document.getElementsByClassName("formerror")[1].innerHTML=" *Email is required";
+    document.getElementsByClassName("input-text-email")[0].style.borderColor = "red";
+    document.getElementsByClassName("star")[1].style.visibility="hidden"
+    document.getElementsByClassName("formerror")[1].style.visibility = "visible";
     res=false;
   }
-  if(email.length>0){
-    document.getElementsByClassName("formerror")[1].innerHTML=" *";
-    res=true;
-  }
   var org = document.getElementById("orgName").value;
-  if(org.length>0){
-    document.getElementsByClassName("formerror")[3].innerHTML=" *";
-    res=true;
-  }
   if(org.length==0){
-    document.getElementsByClassName("formerror")[3].innerHTML=" *Organization required";
+    document.getElementsByClassName("input-text-phone")[1].style.borderColor = "red";
+    document.getElementsByClassName("star")[2].style.visibility="hidden"
+    document.getElementsByClassName("formerror")[3].style.visibility = "visible";
     res=false;
   }
   if (res==false){
-    document.getElementsByClassName("error-show")[0].innerHTML="Please fill all the required fields below";
+    document.getElementsByClassName("error-show")[0].style.visibility = "visible";
   }
-  return res;
-  
+  if (res==true) {
+     alert("Form Submitted");
+  } else {
+    return res;
   }
+   
+  }
+
+
 function setPromotion(value) {
   if (value != 'select') {
       document.getElementById("promotion").value = value + " - PROMO";
@@ -69,7 +65,7 @@ for( var  i = 0 ; i< button.length ; i++){
   button[i].addEventListener('click' , function() {
           var error = document.getElementsByClassName("formerror");
           for(var i=0 ; i<error.length ; i++){
-            error[i].innerHTML=" ";
+            error[i].innerHTML="";
           }
   })
 }

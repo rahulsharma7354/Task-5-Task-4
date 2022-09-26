@@ -112,6 +112,15 @@
     font-size: 12px;
     font-family: 'Laila', sans-serif;
 }
+.formerror{
+    visibility: hidden;
+}
+.error-show{
+    visibility: hidden;
+}
+.star{
+    color: red;
+}
 .tellabout-heading{
     margin-bottom: 10px;
 }
