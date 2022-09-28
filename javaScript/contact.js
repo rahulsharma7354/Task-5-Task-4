@@ -22,43 +22,42 @@ $(document).ready(function(){
       var k = $('input[name="male"]:checked').val();
       alert(k);
   })
+  }
+)
 
-
-  $. fn. validateForm=function(){ 
+ function validateForm() {
   var res = true;
-  var name = $("#name").val();
-  if(name.length==0){
-    $(".input-text-name")[0].css({"border-color":"red"});
-    $(".star")[0].css('visibility', 'hidden');
-    $(".formerror")[0].css('visibility', 'visible');
-    res=false;
-  }
-  var email = $("#email").value;
-  if(email.length==0){
-    $(".input-text-email")[0].css({"border-color":"red"});
-    $(".star")[1].css('visibility', 'hidden');
-    $(".formerror")[1].css('visibility', 'visible');
-    res=false;
-  }
-  var org = document.getElementById("orgName").value;
-  if(org.length==0){
-    $(".input-text-phone")[1].css({"border-color":"red"});
-    $(".star")[2].css('visibility', 'hidden');
-    $(".formerror")[3].css('visibility', 'visible');
-    res=false;
-  }
-  if (res==false){
-    $("error-show")[0].css('visibility', 'visible');
-  }
-  if (res==true) {
-     alert("Form Submitted");
-  } else {
-    return res;
-  }
-  }
-})
-
-
+var name = $("#name").val();
+if(name.length==0){
+$(".input-text-name").css({"border-color":"red"});
+$(".star")[0].css('visibility', 'hidden');
+$(".formerror")[0].css('visibility', 'visible');
+res=false;
+}
+var email = $("#email").val();
+if(email.length==0){
+$(".input-text-email").css({"border-color":"red"});
+$(".star")[1].css('visibility', 'hidden');
+$(".formerror")[1].css('visibility', 'visible');
+res=false;
+}
+var org = $("#orgName").val();
+if(org.length==0){
+$(".input-text-phone")[1].css({"border-color":"red"});
+$(".star")[2].css('visibility', 'hidden');
+$(".formerror")[3].css('visibility', 'visible');
+res=false;
+}
+if (res==false){
+  $("error-show")[0].css('visibility', 'visible');
+}
+if (res==true) {
+  alert("Form Submitted");
+} else {
+ return res;
+}
+}
+    
 
 
 
