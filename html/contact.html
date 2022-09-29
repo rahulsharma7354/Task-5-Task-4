@@ -43,7 +43,7 @@
         <p> My Name <input class="input-text-name" id="name" type="text" name="fname"><span class="star">*</span><span class="formerror">Name is required</span></p>
         <p> My Email Address: <input class="input-text-email" id="email" type="email" name="femail"><span class="star">*</span><span class="formerror">Email is required </span></p>
         <p> My Telephone Number: <input class="input-text-phone" id="phone" type="number" name="fnum"><span class="formerror"> </span></p>
-        <p> My Organization Name: <input class="input-text-phone" id="orgName" type="text" name=""><span class="star">*</span><span class="formerror">Organization required</span></p>
+        <p> My Organization Name: <input class="input-text-phone orgname" id="orgName" type="text" name=""><span class="star">*</span><span class="formerror">Organization required</span></p>
         <p> My city: <input class="input-text-city" id="city" type="text"><span class="formerror"></span></p>
         <p class="state-input">
             <b>My State or Provience:</b>
@@ -51,13 +51,12 @@
             name="Select State or Province"
             class="input-state stateDropdown"
             id="stateDropdown"
-            onchange="setPromotion(this.value)"
             >
-                <option  class="input-field" value="">Select state or provience</option>
-                <option value="Madhya Pradesh">Madhya Pradesh</option>
-                <option value="Uttar pradesh">Uttar pradesh</option>
-                <option value="Maharastra">Maharastra</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option  class="input-field" value="select">Select state or provience</option>
+                <option class = "input-value" value="Madhya Pradesh">Madhya Pradesh</option>
+                <option class = "input-value" value="Uttar pradesh">Uttar pradesh</option>
+                <option class = "input-value" value="Maharastra">Maharastra</option>
+                <option class = "input-value" value="Tamil Nadu">Tamil Nadu</option>
             </select>
         </p>
         <div class="contact">
@@ -65,9 +64,9 @@
                 <p class="contactmepara">Please Contact me by:</p>
             </div>
             <div class="radiobuttons">
-                <p><input type="radio" name="contactme"> Email</p>
-                <p><input type="radio" name="contactme"> Phone</p>
-                <p><input type="radio" name="contactme"> Both</p>
+                <p><input type="radio" class="contact-details" name="contactme"value="Email"> Email</p>
+                <p><input type="radio" name="contactme" value="phone" class="contact-details" > Phone</p>
+                <p><input type="radio" name="contactme" value="Both" class="contact-details" > Both</p>
             </div>
         </div>
         <div class="contact">
@@ -88,9 +87,9 @@
         <h4 class="tellabout-heading">Tell Us More About Your Organization:</h4>
         <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
         <h4 class="liketodo-heading">What i did really like to know is:</h4>
-        <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
+        <textarea class="textinput-area" name="Organization" id="Organization" class="about-you" cols="41" rows="6"></textarea>
         <div class="button-container"></div>
-        <button type="submit" class="first-button">Submit Form</button>
+        <button type="submit" value="submit" class="first-button">Submit Form</button>
         <button class="second-button">Clear Form</button>
     </form>
     
