@@ -113,14 +113,26 @@
     font-size: 12px;
     font-family: 'Laila', sans-serif;
 }
+.name-formerror{
+    visibility: hidden;
+}
+.email-formerror{
+    visibility: hidden;
+}
 .formerror{
     visibility: hidden;
 }
 .error-show{
     visibility: hidden;
 }
-.star{
+.name-star{
     color: red;
+}
+.email-star{
+    color: red;
+}
+.star{
+    color:red;
 }
 .tellabout-heading{
     margin-bottom: 10px;
@@ -161,4 +173,11 @@
 }
 .color{
     border-color: red;
+}
+.hidden{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+    color: red;
 }

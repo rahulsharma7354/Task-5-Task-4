@@ -1,61 +1,61 @@
 $(document).ready(function () {
   $(".male").click(function () {
-    var k = $('input[name="male"]:checked').val();
-    alert(k);
+    var gender = $('input[name="male"]:checked').val();
+    alert(gender);
   })
-  $('.second-button').click(function () {
+  $('.clear-button').click(function () {
     $('#myform')[0].reset();
     localStorage.clear();
   })
 }
 )
-$('.first-button').click(function validateForm() {
+$('.submit-button').click(function validateForm() {
   var res = true;
   var name = $('#name').val();
   if (name.length == 0) {
     $(".input-text-name").addClass("color");
-    $(".star")[0].style.visibility = "hidden";
-    $(".formerror")[0].style.visibility = "visible";
+    $(".name-star").addClass("hidden");
+    $(".name-formerror").addClass("visible");
     res = false;
   }
   var email = $("#email").val();
   if (email.length == 0) {
     $(".input-text-email").addClass("color");
-    $(".star")[1].style.visibility = "hidden";
-    $(".formerror")[1].style.visibility = "visible";
+    $(".email-star").addClass("hidden");
+    $(".email-formerror").addClass("visible");
     res = false;
   }
   var org = $("#orgName").val();
   if (org.length == 0) {
     $(".orgname").addClass("color");
-    $(".star")[2].style.visibility = "hidden";
-    $(".formerror")[3].style.visibility = "visible";
+    $(".star").addClass("hidden");
+    $(".formerror").addClass("visible");
     res = false;
   }
   if (res==false){
-    $(".error-show")[0].style.visibility = "visible";
+    $(".error-show").addClass("visible");
   }
   if (res==true) {
-    var uname = $("#name"). val();
-    var uemail = $("#email").val();
-    var uphone = $("#phone").val();
-    var uorgname = $("#orgName").val();
-     var ucity = $("#city").val();
-    var ustate = $("#stateDropdown").val();
-    var ucontact = $(".contact-details").val();
-    var ugender = $(".male").val();
-    var promo =$(".promotion").val();
-    var website = $(".input-text-website").val();
+    var name = $("#name"). val();
+    var email = $("#email").val();
+    var phone = $("#phone").val();
+    var orgname = $("#orgName").val();
+     var city = $("#city").val();
+    var state = $("#stateDropdown").val();
+    var contact = $("#contact-details").val();
+    var gender = $("#male").val();
+    var promo =$("#promotion").val();
+    var website = $("#input-text-website").val();
     
     
-    localStorage.setItem('Name' , uname);
-    localStorage.setItem('Email' , uemail);
-    localStorage.setItem('Phone' , uphone);
-    localStorage.setItem('Organization' , uorgname);
-    localStorage.setItem('City', ucity);
-    localStorage.setItem('State' , ustate);
-    localStorage.setItem('Contact' , ucontact);
-    localStorage.setItem('Gender' , ugender);
+    localStorage.setItem('Name' , name);
+    localStorage.setItem('Email' , email);
+    localStorage.setItem('Phone' , phone);
+    localStorage.setItem('Organization' , orgname);
+    localStorage.setItem('City', city);
+    localStorage.setItem('State' , state);
+    localStorage.setItem('Contact' , contact);
+    localStorage.setItem('Gender' , gender);
     localStorage.setItem('Promotion Code' , promo);
     localStorage.setItem('Website',website);
   } else {

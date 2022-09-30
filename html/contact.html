@@ -40,9 +40,9 @@
 <body>
     <form  class="form-container " name = "myForm" id="myform" onsubmit="return validateForm()">
         <b><div class="error-show">Please fill all the required fields below</div></b>
-        <p> My Name <input class="input-text-name" id="name" type="text" name="fname"><span class="star">*</span><span class="formerror">Name is required</span></p>
-        <p> My Email Address: <input class="input-text-email" id="email" type="email" name="femail"><span class="star">*</span><span class="formerror">Email is required </span></p>
-        <p> My Telephone Number: <input class="input-text-phone" id="phone" type="number" name="fnum"><span class="formerror"> </span></p>
+        <p> My Name <input class="input-text-name" id="name" type="text" name="fname"><span class="name-star">*</span><span class="name-formerror">Name is required</span></p>
+        <p> My Email Address: <input class="input-text-email" id="email" type="email" name="femail"><span class="email-star">*</span><span class="email-formerror">Email is required </span></p>
+        <p> My Telephone Number: <input class="input-text-phone" id="phone" type="number" name="fnum"><span> </span></p>
         <p> My Organization Name: <input class="input-text-phone orgname" id="orgName" type="text" name=""><span class="star">*</span><span class="formerror">Organization required</span></p>
         <p> My city: <input class="input-text-city" id="city" type="text"><span class="formerror"></span></p>
         <p class="state-input">
@@ -64,7 +64,7 @@
                 <p class="contactmepara">Please Contact me by:</p>
             </div>
             <div class="radiobuttons">
-                <p><input type="radio" class="contact-details" name="contactme"value="Email"> Email</p>
+                <p><input type="radio" class="contact-details"id="contact-details" name="contactme"value="Email"> Email</p>
                 <p><input type="radio" name="contactme" value="phone" class="contact-details" > Phone</p>
                 <p><input type="radio" name="contactme" value="Both" class="contact-details" > Both</p>
             </div>
@@ -74,7 +74,7 @@
                 <p class="gender">Gender:</p>
             </div>
             <div class="gender-option">
-                <p><input class="male" type="radio" name="male" value="Hello Sir"> Male</p>
+                <p><input class="male" type="radio" name="male" id="male" value="Hello Sir"> Male</p>
                 <p><input class="male" type="radio" name="male" value="Hello Lady"> Female</p>
             </div>
         </div>
@@ -83,14 +83,14 @@
 
         <h4 class="information-heading">Optional Information</h4>
         <p class="information-para">This information is optional but it helps us to serve you better.</p>
-        <p>My Website Address is: <input class="input-text-website" type="text"></p>
+        <p>My Website Address is: <input class="input-text-website" id="input-text-website" type="text"></p>
         <h4 class="tellabout-heading">Tell Us More About Your Organization:</h4>
         <textarea class="textinput-area" name="Organization" id="Organization" cols="41" rows="6"></textarea>
         <h4 class="liketodo-heading">What i did really like to know is:</h4>
         <textarea class="textinput-area" name="Organization" id="Organization" class="about-you" cols="41" rows="6"></textarea>
         <div class="button-container"></div>
-        <button type="submit" value="submit" class="first-button">Submit Form</button>
-        <button class="second-button">Clear Form</button>
+        <button type="submit" value="submit" class="first-button submit-button">Submit Form</button>
+        <button class="second-button clear-button">Clear Form</button>
     </form>
     
     <script src="/javaScript/contact.js"></script>
